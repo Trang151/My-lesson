@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const Fruits = ["mango", "orange", "banana"];
+        // Return value of array and total amount of items -> (3) ['mango', 'orange', 'banana']
+        console.log(Fruits);
+        // Return value of idex's item numbered O -> mango
+        console.log(Fruits[0]);
+        // Return value of idex's item numbered 4 -> undefined due to there are only 3 items, the maximum index is 2
+        console.log(Fruits[4]);
+        // Return the length of array (How many items in this array) -> 3 items
+        console.log(Fruits.length);
+        // Replace value of index's item 0 -> mango -> papaya 
+        Fruits[0] = "papaya";
+        console.log(Fruits[0]);
+        // Add GUAVA into FRUITS array
+        let Fruits1 = Fruits.push('guava');
+        console.log(Fruits1);
+        console.log(Fruits.pop());
+        console.log(Fruits.shift());
+        let Fruits2 = Fruits.unshift('tomato', 'cherry');
+        console.log(Fruits2);
+        console.log(Fruits);
+        for (i = 0; i < Fruits.length; i++) {
+            console.log(Fruits[i]);
+        }
+        for (let value of Fruits) {
+            console.log(value);
+        }
+
+        ////
+        let arr = [];
+        arr[1000] = "a";
+        console.log(arr.length);
+        console.log(arr[1]);
+        console.log(arr[1000]);
+        console.log(arr[1000 - 1]);
+
+        // 1. Tạo mảng `letters` với hai phần tử "a" và "b".
+        let letters = ['a', 'b'];
+        // 2. Thêm phần tử "c" vào cuối mảng.
+        let newletter = letters.push('c');
+        // 3. Thay đổi giá trị của phần tử ở giữa thành "d".
+        console.log(newletter);
+        letters[1] = 'd';
+        console.log(letters);
+        // 4. Lấy ra và trả về giá trị phần tử đầu tiên của mảng.
+        console.log(letters.shift());
+        // 5. Thêm hai số 1, 2 vào đầu mảng.
+        console.log(letters.unshift(1, 2));
+        console.log(letters);
+
+
+
+    </script>
+</body>
+
+</html>
